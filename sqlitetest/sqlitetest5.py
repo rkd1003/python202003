@@ -15,5 +15,8 @@ sql='''
     )'''
 
 cur.execute(sql)
+sql='delete from sup'
+cur.execute(sql)
+
 conn.commit()
 conn.close()
