@@ -1,7 +1,6 @@
 #csv->db
 import sqlite3,csv
 
-input_file='sqlitetest/input.csv'
 conn=sqlite3.connect('sqlitetest/sup.db')
 cur=conn.cursor()
 sql='''
@@ -17,6 +16,14 @@ sql='''
 cur.execute(sql)
 sql='delete from sup'
 cur.execute(sql)
-
+input_file='sqlitetest/input.csv'
+open_file=open(input_file,'r')
+file_reader = csv.reader(open_file,delimiter=',')
+print(next(file_reader))
+data=[]
+for row in file_reader:
+    data.append(row)
+sql='insert into sup values(?,?,?,?,?)'
+cur.executemany(sql,data)
 conn.commit()
 conn.close()
