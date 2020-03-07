@@ -4,4 +4,5 @@
 1. 복사하기
 git clone https://github.com/rkd1003/python202003.git
 
-2. 
+2. 소스 코딩하기
+
