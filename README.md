@@ -1,4 +1,7 @@
 # python202003
 파이썬 기본 수업소스
 
-git 연습중
+1. 복사하기
+git clone https://github.com/rkd1003/python202003.git
+
+2. 
