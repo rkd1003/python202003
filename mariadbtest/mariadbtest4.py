@@ -23,3 +23,4 @@ sql='select * from stocks order by price desc'
 c.execute(sql)
 print(c.fetchall())
 conn.close()
+
