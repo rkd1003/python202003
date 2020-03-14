@@ -43,43 +43,28 @@
         </nav>
     </div>
     <br>
-    <div class="container-fluid">
-      <div class="jumbotron" style="background-image: url('/static/11.jpg'); background-size: cover; ">
-        <h1 class="display-4" style="color : red;font-family: 'East Sea Dokdo', cursive;">kgitbank 데이터 분석</h1>
-        <p class="lead" style="color : darkred">주요 콘텐츠 나 정보에 특별한주의를 기울이는 간단한 점보트론 스타일의 구성 요소 인 간단한 영웅 장치입니다.</p>
-        <hr class="my-4">
-        <p style="color : green">타이포그래피 및 간격에 유틸리티 클래스를 사용하여 더 큰 컨테이너 내에 컨텐츠를 배치합니다.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" style="color : darkslategray">더 알아보기</a>
-      </div>
+    <div class="container">
+        <form action="/inputdata" method="get">
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" class="form-control" id="Name" name="Name">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+        
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" id="Password" name="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </div>
     <br>
     <div class="container-fluid">
-      <div class="card-group">
-        <div class="card">
-          <img src="/static/11.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/static/22.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/static/33.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
+    
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
