@@ -41,7 +41,7 @@ def list_files():
 def get_file(path):
     """Download a file."""
     return send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
-
+ 
 
 # @app.route("/files/<filename>", methods=["POST"])
 # def post_file(filename):
