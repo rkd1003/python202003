@@ -122,7 +122,7 @@ def ajaxlistpost():
     query = User.query.filter(User.userid.like('%'+userid+'%')). order_by(User.userid)
     all_data = query.all()
    
-    return jsonify(all_data)    
+    return jsonify(all_data)
 
 @app.route('/imglist')
 def imglist():
